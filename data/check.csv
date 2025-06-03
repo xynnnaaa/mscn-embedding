@@ -1,0 +1,10 @@
+users u,votes v#u.Id=v.UserId#v.BountyAmount,>,54#288
+badges b,postHistory ph,posts p,users u#b.UserId=u.Id,ph.UserId=u.Id,p.OwnerUserId=u.Id#p.ViewCount,<,141996,ph.PostHistoryTypeId,=,3,b.Date,>,1362824503,b.Date,<,1364930562#423530
+users u,comments c,postHistory ph,badges b#u.Id=c.UserId,u.Id=b.UserId,u.Id=ph.UserId#u.CreationDate,>,1285406154,u.Reputation,<,76703#10414701020
+postHistory ph,comments c,posts p#c.PostId=p.Id,ph.PostId=p.Id#ph.PostHistoryTypeId,=,14#385
+badges b,posts p,users u#b.UserId=u.Id,p.OwnerUserId=u.Id#p.CommentCount,=,14,p.CreationDate,>,1295434357,b.Date,>,1363674687,b.Date,<,1393319863#2502
+users u,comments c#u.Id=c.UserId#c.CreationDate,>,1330308830,c.CreationDate,<,1344315640,u.UpVotes,<,9695,c.Score,<,61#17545
+users u,comments c,posts p#u.Id=c.UserId,u.Id=p.OwnerUserId#u.Views,>,15996,u.Reputation,>,27354,u.CreationDate,<,1323755720#15916880
+postLinks pl,comments c,posts p,users u#c.UserId=u.Id,p.Id=pl.PostId,p.OwnerUserId=u.Id#u.Reputation,<,41218,u.CreationDate,<,1346437198,c.CreationDate,>,1264501962#479121
+users u,badges b#u.Id=b.UserId#u.CreationDate,>,1364695777,u.DownVotes,<,665#28401
+badges b,postHistory ph,users u#ph.UserId=u.Id,b.UserId=u.Id#b.Date,<,1311644163,ph.PostHistoryTypeId,<,27#2176725

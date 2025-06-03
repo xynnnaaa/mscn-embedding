@@ -1,0 +1,65 @@
+data/train_alter
+Loaded queries
+Loaded table embeddings
+min log(label): 0.0
+max log(label): 23.446150378199373
+50654 45588 5066
+Number of training samples: 45588
+Number of validation samples: 5066
+Created TensorDataset for training data
+Created TensorDataset for validation data
+Loading best model from: saved_models/train_alter_best_model.pth
+Prediction time per training sample: 0.006893784202608486
+Prediction time per validation sample: 0.006486717251229088
+/data1/xuyining/mscn-embedding/mscn/util.py:110: FutureWarning: The input object of type 'Tensor' is an array-like implementing one of the corresponding protocols (`__array__`, `__array_interface__` or `__array_struct__`); but not a sequence (or 0-D). In the future, this object will be coerced as if it was first converted using `np.array(obj)`. To retain the old behaviour, you have to either modify the type 'Tensor', or assign to an empty array created with `np.empty(correct_shape, dtype=object)`.
+  labels_norm = np.array(labels_norm, dtype=np.float32)
+
+Q-Error training set:
+采样未命中：
+Median: 1.8606217616580312
+90th percentile: 5.681222707423581
+95th percentile: 8.65
+99th percentile: 20.98635926993277
+Max: 100.0
+Mean: 3.0689574199870937
+
+采样命中：
+Median: 1.4373574236664277
+90th percentile: 3.402035176573138
+95th percentile: 5.0957198901482155
+99th percentile: 13.314211186852228
+Max: 111.91666666666667
+Mean: 2.1428646450193862
+
+All Queries Q-Error Statistics:
+Median: 1.5714285714285714
+90th percentile: 4.392500775009795
+95th percentile: 6.7307790774663445
+99th percentile: 16.89159110718914
+Max: 111.91666666666667
+Mean: 2.5325151126129546
+
+Q-Error validation set:
+采样未命中：
+Median: 1.9901000468246164
+90th percentile: 7.588119783996072
+95th percentile: 13.792991491267353
+99th percentile: 59.16982758620752
+Max: 508.53955954323004
+Mean: 4.957191353017247
+
+采样命中：
+Median: 1.4807741340251919
+90th percentile: 3.9366872014705607
+95th percentile: 6.319761368721222
+99th percentile: 19.150810810810786
+Max: 419.0
+Mean: 2.84093380409088
+
+All Queries Q-Error Statistics:
+Median: 1.652523506296719
+90th percentile: 5.432903245072662
+95th percentile: 8.768549364003198
+99th percentile: 37.79043715847006
+Max: 508.53955954323004
+Mean: 3.716511345060021
